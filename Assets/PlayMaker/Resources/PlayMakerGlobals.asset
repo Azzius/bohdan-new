@@ -34,3 +34,4 @@ MonoBehaviour:
   events:
   - setKinematic
   - setDynamic
+  - BohdanGone
