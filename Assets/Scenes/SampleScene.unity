@@ -11163,6 +11163,12 @@ MonoBehaviour:
     - name: arsonOnKamna
       isSystemEvent: 0
       isGlobal: 0
+    - name: isTrue
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: isFalse
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables: []
