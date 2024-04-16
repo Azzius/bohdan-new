@@ -32,7 +32,7 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      type: 0
+      type: 4
       objectTypeName: UnityEngine.Object
       floatValues: []
       intValues: 
@@ -43,7 +43,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000
   events:
   - setKinematic
   - setDynamic
