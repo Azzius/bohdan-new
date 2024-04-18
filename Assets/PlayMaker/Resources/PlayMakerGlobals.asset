@@ -62,3 +62,4 @@ MonoBehaviour:
   - Monolog_vysavac
   - Monolog_zapalit
   - Monolog_DEFAULT
+  - getOff
