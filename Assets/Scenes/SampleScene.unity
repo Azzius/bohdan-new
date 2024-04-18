@@ -11125,7 +11125,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11628246, y: 0.010590315}
+  m_Offset: {x: -0.13539124, y: -0.043446064}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11136,7 +11136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.31454, y: 6.7296443}
+  m_Size: {x: 1.2541199, y: 4.644044}
   m_EdgeRadius: 0
 --- !u!114 &1029593420
 MonoBehaviour:
@@ -11957,7 +11957,7 @@ MonoBehaviour:
         x: 444.8125
         y: 250.46875
         width: 122.8
-        height: 48
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -11980,6 +11980,15 @@ MonoBehaviour:
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
+      - fsmEvent:
+          name: arsonOnKamna
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: canUseonKamna
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.EnableFSM
@@ -11990,6 +11999,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.MousePick2dEvent
         - HutongGames.PlayMaker.Actions.MousePick2dEvent
         - HutongGames.PlayMaker.Actions.Trigger2dEvent
+        - HutongGames.PlayMaker.Actions.Trigger2dEvent
         customNames:
         - 
         - 
@@ -11999,10 +12009,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 0000000004000000090000000d000000110000001c000000240000002c000000
-        actionHashCodes: 87aa9700b2cf10005e69bb04074b15047a408701b7085104b708510449491604
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 010101010101010101
+        actionStartIndex: 0000000004000000090000000d000000110000001c000000240000002c00000031000000
+        actionHashCodes: 87aa9700b2cf10005e69bb04074b15047a408701b7085104b70851044949160449491604
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -12011,6 +12022,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 519420028}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         - useVariable: 1
           name: 
           tooltip: 
@@ -12050,6 +12067,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 176045611}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -12117,6 +12142,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Player
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: kamna
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -12243,14 +12274,15 @@ MonoBehaviour:
         - zapalitBohdana
         - 
         - noLigher
-        byteData: 010000000101000000010102000000
+        - arsonOnKamna
+        byteData: 01000000010100000001010200000000000000
         arrayParamSizes: 0000000000000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         - HutongGames.PlayMaker.FsmInt
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000110000001100000014000000110000001100000001000000010000001f000000170000000f000000010000002100000011000000110000000100000013000000140000000f000000250000001c000000110000000f0000001100000011000000010000000700000014000000170000001700000017000000170000000c000000110000000100000014000000170000001700000017000000170000000c00000011000000010000001400000007000000120000001700000013000000
+        paramDataType: 1400000012000000110000001100000014000000110000001100000001000000010000001f000000170000000f000000010000002100000011000000110000000100000013000000140000000f000000250000001c000000110000000f0000001100000011000000010000000700000014000000170000001700000017000000170000000c000000110000000100000014000000170000001700000017000000170000000c000000110000000100000014000000070000001200000017000000130000001400000007000000120000001700000013000000
         paramName:
         - gameObject
         - fsmName
@@ -12301,8 +12333,13 @@ MonoBehaviour:
         - collideTag
         - sendEvent
         - storeCollider
-        paramDataPos: 0000000000000000000000000100000001000000020000000300000000000000010000000000000000000000000000000200000000000000040000000500000003000000000000000200000001000000000000000000000006000000020000000700000008000000040000000500000003000000010000000200000003000000040000000000000009000000090000000400000005000000060000000700000008000000010000000a0000000a000000050000000b000000010000000900000001000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000004000000000000000000000000000000
+        - gameObject
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 0000000000000000000000000100000001000000020000000300000000000000010000000000000000000000000000000200000000000000040000000500000003000000000000000200000001000000000000000000000006000000020000000700000008000000040000000500000003000000010000000200000003000000040000000000000009000000090000000400000005000000060000000700000008000000010000000a0000000a000000050000000b000000010000000900000001000000060000000f000000020000000a00000002000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000040000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000040000000000000000000000000000000000000004000000000000000000000000000000
     - name: catOnFire
       description: 
       colorIndex: 0
@@ -12447,12 +12484,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: b2cf1000
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: b2cf100027fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -12490,26 +12529,41 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 1
+          name: kamnaHori
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000011000000110000000100000001000000
+        paramDataType: 1400000011000000110000000100000001000000110000001100000001000000
         paramName:
         - gameObject
         - activate
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000001000000
-        paramByteDataSize: 0000000000000000000000000100000001000000
+        - boolVariable
+        - boolValue
+        - everyFrame
+        paramDataPos: 0000000000000000010000000000000001000000020000000300000002000000
+        paramByteDataSize: 0000000000000000000000000100000001000000000000000000000001000000
     - name: event
       description: 
       colorIndex: 0
@@ -12624,7 +12678,7 @@ MonoBehaviour:
         x: 108.125
         y: 291.4297
         width: 130
-        height: 48
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -12647,6 +12701,15 @@ MonoBehaviour:
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
+      - fsmEvent:
+          name: arsonOnCat
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: canUseOnCat
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.EnableFSM
@@ -12657,6 +12720,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.MousePick2dEvent
         - HutongGames.PlayMaker.Actions.MousePick2dEvent
         - HutongGames.PlayMaker.Actions.Trigger2dEvent
+        - HutongGames.PlayMaker.Actions.Trigger2dEvent
         customNames:
         - 
         - 
@@ -12666,10 +12730,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101010101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 0000000004000000090000000d000000110000001c000000240000002c000000
-        actionHashCodes: 87aa9700b2cf10005e69bb04074b15047a408701b7085104b708510449491604
+        - 
+        actionEnabled: 010101010101010101
+        actionIsOpen: 010101010101010101
+        actionStartIndex: 0000000004000000090000000d000000110000001c000000240000002c00000031000000
+        actionHashCodes: 87aa9700b2cf10005e69bb04074b15047a408701b7085104b70851044949160449491604
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -12678,6 +12743,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 519420028}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         - useVariable: 1
           name: 
           tooltip: 
@@ -12733,6 +12804,14 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -12778,6 +12857,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: grabBohdan
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: kamna
         - useVariable: 0
           name: 
           tooltip: 
@@ -12910,14 +12995,15 @@ MonoBehaviour:
         - zapalitKamna
         - 
         - noLigher
-        byteData: 010000000101000000010102000000
+        - arsonOnCat
+        byteData: 01000000010100000001010200000000000000
         arrayParamSizes: 0000000000000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         - HutongGames.PlayMaker.FsmInt
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000110000001100000014000000110000001100000001000000010000001f000000170000000f000000010000002100000011000000110000000100000013000000140000000f000000250000001c000000110000000f0000001100000011000000010000000700000014000000170000001700000017000000170000000c000000110000000100000014000000170000001700000017000000170000000c00000011000000010000001400000007000000120000001700000013000000
+        paramDataType: 1400000012000000110000001100000014000000110000001100000001000000010000001f000000170000000f000000010000002100000011000000110000000100000013000000140000000f000000250000001c000000110000000f0000001100000011000000010000000700000014000000170000001700000017000000170000000c000000110000000100000014000000170000001700000017000000170000000c000000110000000100000014000000070000001200000017000000130000001400000007000000120000001700000013000000
         paramName:
         - gameObject
         - fsmName
@@ -12968,8 +13054,13 @@ MonoBehaviour:
         - collideTag
         - sendEvent
         - storeCollider
-        paramDataPos: 0000000000000000000000000100000001000000020000000300000000000000010000000000000000000000000000000200000000000000040000000500000003000000000000000200000001000000000000000000000006000000020000000700000008000000040000000500000003000000010000000200000003000000040000000000000009000000090000000400000005000000060000000700000008000000010000000a0000000a000000050000000b000000010000000900000001000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000100000004000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000004000000000000000000000000000000
+        - gameObject
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 0000000000000000000000000100000001000000020000000300000000000000010000000000000000000000000000000200000000000000040000000500000003000000000000000200000001000000000000000000000006000000020000000700000008000000040000000500000003000000010000000200000003000000040000000000000009000000090000000400000005000000060000000700000008000000010000000a0000000a000000050000000b000000010000000900000001000000060000000f000000020000000a00000002000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000040000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000040000000000000000000000000000000000000004000000000000000000000000000000
     - name: listAdd
       description: 
       colorIndex: 0
@@ -13094,9 +13185,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 606.15625
-        y: 361.15625
-        width: 100
+        x: 590.6797
+        y: 359.14062
+        width: 131.6
         height: 48
       isBreakpoint: 0
       isSequence: 0
@@ -13177,15 +13268,6 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: MOUSE DOWN
-      isSystemEvent: 1
-      isGlobal: 0
-    - name: MOUSE OVER
-      isSystemEvent: 1
-      isGlobal: 0
-    - name: UI POINTER DOWN
-      isSystemEvent: 1
-      isGlobal: 0
     - name: arsonOnCat
       isSystemEvent: 0
       isGlobal: 0
@@ -13231,7 +13313,19 @@ MonoBehaviour:
     - name: Monolog_DEFAULT
       isSystemEvent: 0
       isGlobal: 1
-    globalTransitions: []
+    - name: setBohdanOnFire
+      isSystemEvent: 0
+      isGlobal: 1
+    globalTransitions:
+    - fsmEvent:
+        name: setBohdanOnFire
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: boolTest
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
     variables:
       floatVariables: []
       intVariables: []
@@ -13242,6 +13336,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 1
+      - useVariable: 1
+        name: kamnaHori
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       stringVariables: []
       vector2Variables:
       - useVariable: 1
@@ -13262,7 +13362,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -16147,6 +16247,7 @@ GameObject:
   - component: {fileID: 1632623662}
   - component: {fileID: 1632623664}
   - component: {fileID: 1632623663}
+  - component: {fileID: 1632623665}
   m_Layer: 0
   m_Name: KAMNA
   m_TagString: kamna
@@ -16163,7 +16264,7 @@ Transform:
   m_GameObject: {fileID: 1632623661}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4645, y: -0.12432238, z: 0}
+  m_LocalPosition: {x: -0.47, y: -0.12432238, z: 0}
   m_LocalScale: {x: 0.011271046, y: 0.043601755, z: 0.08303273}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16204,7 +16305,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5620661, y: -0.7587905}
+  m_Offset: {x: 0.56206673, y: -0.7754086}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16215,7 +16316,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3324504, y: 2.3886542}
+  m_Size: {x: 1.8006757, y: 1.8236411}
   m_EdgeRadius: 0
 --- !u!212 &1632623664
 SpriteRenderer:
@@ -16269,6 +16370,608 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1632623665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632623661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: "p\u0159ilo\u017EitBohdanem"
+    startState: checking
+    states:
+    - name: checking
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 126.8
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: canPutBohdanIn
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: waitingForTrigger
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetFsmBool
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: 68fece05a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1029593416}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: grabLighter
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: kamnaHori
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: kamnaHori
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: kamnaHori
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - canPutBohdanIn
+        - 
+        byteData: 0101
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001200000012000000110000000100000011000000170000001700000001000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 000000000000000001000000000000000000000001000000000000000100000001000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000001000000
+    - name: waitingForTrigger
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 125.69531
+        y: 160.92188
+        width: 131.6
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: showBubble
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: textBubble
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Trigger2dEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 49491604
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Player
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - showBubble
+        byteData: 00000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000007000000120000001700000013000000
+        paramName:
+        - gameObject
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 0000000000000000000000000000000000000000
+        paramByteDataSize: 0000000004000000000000000000000000000000
+    - name: FIRE
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 67.734375
+        y: 235.46875
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: checking
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.Trigger2dEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 5e69bb0449491604
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 1029593416}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: grabLighter
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Player
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - setBohdanOnFire
+        - FINISHED
+        byteData: 0002000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f000000170000000f000000010000001400000007000000120000001700000013000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - gameObject
+        - trigger
+        - collideTag
+        - sendEvent
+        - storeCollider
+        paramDataPos: 000000000000000000000000000000000000000001000000000000000100000000000000
+        paramByteDataSize: 000000000000000000000000010000000000000004000000000000000000000000000000
+    - name: textBubble
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 255.42969
+        y: 233.05469
+        width: 131.6
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: setBohdanOnFire
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: FIRE
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.MousePick2dEvent
+        - HutongGames.PlayMaker.Actions.MousePick2dEvent
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000040000000c000000
+        actionHashCodes: 5e69bb04b7085104b7085104
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 176045611}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 290590459}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: monologSystem
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Monolog_zapalit
+        - 
+        - 
+        - setBohdanOnFire
+        - 
+        - 
+        - 
+        - setBohdanOnFire
+        - 
+        byteData: 000101
+        arrayParamSizes: 0000000000000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmInt
+        - HutongGames.PlayMaker.FsmInt
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1f000000170000000f0000000100000014000000170000001700000017000000170000000c000000110000000100000014000000170000001700000017000000170000000c0000001100000001000000
+        paramName:
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        - GameObject
+        - mouseOver
+        - mouseDown
+        - mouseUp
+        - mouseOff
+        - layerMask
+        - invertMask
+        - everyFrame
+        - GameObject
+        - mouseOver
+        - mouseDown
+        - mouseUp
+        - mouseOff
+        - layerMask
+        - invertMask
+        - everyFrame
+        paramDataPos: 0000000000000000000000000000000000000000010000000200000003000000040000000000000000000000010000000100000005000000060000000700000008000000010000000100000002000000
+        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000
+    events:
+    - name: canPutBohdanIn
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: setBohdanOnFire
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: Monolog_zapalit
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: showBubble
+      isSystemEvent: 0
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables:
+      - useVariable: 1
+        name: kamnaHori
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 00000000
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!1 &1678079243
 GameObject:
   m_ObjectHideFlags: 0
