@@ -17223,7 +17223,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223578239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
   m_Name: 
@@ -17252,7 +17252,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.ArrayGet
         customNames:
         - 
-        actionEnabled: 01
+        actionEnabled: 00
         actionIsOpen: 01
         actionStartIndex: 00000000
         actionHashCodes: 6ba59301
@@ -17271,7 +17271,7 @@ MonoBehaviour:
         - variableName: 
           objectType: UnityEngine.Object
           useVariable: 1
-          type: 0
+          type: 4
           floatValue: 0
           intValue: 0
           boolValue: 0
@@ -17294,12 +17294,12 @@ MonoBehaviour:
             objectReferences: []
         fsmArrayParams:
         - useVariable: 1
-          name: 
+          name: globalListOfActions
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          type: -1
-          objectTypeName: 
+          type: 4
+          objectTypeName: UnityEngine.Object
           floatValues: []
           intValues: 
           boolValues: 
