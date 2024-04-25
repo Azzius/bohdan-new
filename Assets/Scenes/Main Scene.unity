@@ -13516,7 +13516,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
+        actionEnabled: 000101
         actionIsOpen: 010101
         actionStartIndex: 000000000500000008000000
         actionHashCodes: b2cf1000fb25880109faa102
@@ -13597,7 +13597,7 @@ MonoBehaviour:
         - showLists
         - 
         - showLists
-        byteData: 01000000
+        byteData: 00000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -13644,17 +13644,25 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.DestroyObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: b2cf1000b2cf1000
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000008000000
+        actionHashCodes: 9ff80c02b2cf1000b2cf1000
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1968405535}
         fsmOwnerDefaultParams:
         - ownerOption: 1
           gameObject:
@@ -13683,9 +13691,21 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -13721,9 +13741,12 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001400000011000000110000000100000001000000
+        paramDataType: 130000000f0000001100000014000000110000001100000001000000010000001400000011000000110000000100000001000000
         paramName:
         - gameObject
+        - delay
+        - detachChildren
+        - gameObject
         - activate
         - recursive
         - resetOnExit
@@ -13733,8 +13756,8 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000000000000100000000000000010000000100000002000000030000000200000003000000
-        paramByteDataSize: 00000000000000000000000001000000010000000000000000000000000000000100000001000000
+        paramDataPos: 00000000000000000000000000000000010000000200000000000000010000000100000003000000040000000200000003000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000010000000000000000000000000000000100000001000000
     events:
     - name: iterate
       isSystemEvent: 0
@@ -13745,6 +13768,9 @@ MonoBehaviour:
     - name: showLists
       isSystemEvent: 0
       isGlobal: 0
+    - name: deactivate
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -22656,7 +22682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1968405536
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22666,15 +22692,15 @@ RectTransform:
   m_GameObject: {fileID: 1968405535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.11648187, y: 0.06534349, z: 0.075760566}
+  m_LocalScale: {x: 0.13238846, y: 0.10591077, z: 0.13238846}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 831781918}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.16, y: -0.98}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -0.73, y: -1.14}
+  m_SizeDelta: {x: 78.17, y: 66.8991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1968405537
 MonoBehaviour:
@@ -22690,9 +22716,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

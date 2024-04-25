@@ -64,3 +64,4 @@ MonoBehaviour:
   - Monolog_DEFAULT
   - getOff
   - setBohdanOnFire
+  - deactivate
