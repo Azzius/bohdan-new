@@ -40,10 +40,23 @@ MonoBehaviour:
       stringValues: []
       vector4Values: []
       objectReferences: []
+    - useVariable: 1
+      name: CrazyActionsList
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 4
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues: []
+      vector4Values: []
+      objectReferences: []
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000
   events:
   - setKinematic
   - setDynamic
@@ -65,3 +78,4 @@ MonoBehaviour:
   - getOff
   - setBohdanOnFire
   - deactivate
+  - Monolog_kamna
