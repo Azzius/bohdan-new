@@ -2291,7 +2291,7 @@ MonoBehaviour:
           name: dropBohdan
           isSystemEvent: 0
           isGlobal: 0
-        toState: fallin
+        toState: State 1
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -2602,7 +2602,7 @@ MonoBehaviour:
           name: notGrabbingBohdan
           isSystemEvent: 0
           isGlobal: 0
-        toState: fallin
+        toState: State 1
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
