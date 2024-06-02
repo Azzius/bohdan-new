@@ -3855,7 +3855,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2800000, guid: aad55a6762c072b4d87a536e0866ecaf, type: 3}
+          value: {fileID: 2800000, guid: 1e45a451208f36a47904181371890ca0, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -4094,7 +4094,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2800000, guid: b5348a0033bba48479b8dcf59e7302d8, type: 3}
+          value: {fileID: 2800000, guid: 1e45a451208f36a47904181371890ca0, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -4173,7 +4173,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {x: 0, y: 0}
+          value: {x: 0, y: -0.5}
         fsmVector3Params:
         - useVariable: 1
           name: 
@@ -4346,7 +4346,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2800000, guid: 7d12de16e2c380b4db61c971f62cd5a4, type: 3}
+          value: {fileID: 2800000, guid: 5c44d811f1f1a424f96e11d5e41be445, type: 3}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -27359,17 +27359,17 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: nastenkaVisibility
-    startState: buttonMode
+    startState: init
     states:
-    - name: buttonMode
+    - name: canClick
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 58.203125
-        y: 99.796875
+        x: 58.195312
+        y: 178.67969
         width: 120.4
-        height: 32
+        height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -27379,6 +27379,15 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 0
         toState: UIshow
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: cantClick
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: init
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -27454,7 +27463,7 @@ MonoBehaviour:
         - 
         - nastenkaBigOn
         - 
-        - 
+        - cantClick
         byteData: 010000
         arrayParamSizes: 00000000
         arrayParamTypes:
@@ -27483,8 +27492,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 59.195312
-        y: 166.15625
+        x: 59.1875
+        y: 262.0625
         width: 122.8
         height: 32
       isBreakpoint: 0
@@ -27495,7 +27504,7 @@ MonoBehaviour:
           name: nastenkaBigOff
           isSystemEvent: 0
           isGlobal: 0
-        toState: buttonMode
+        toState: canClick
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -27601,6 +27610,121 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000001000000000000000100000000000000000000000100000000000000010000000200000002000000
         paramByteDataSize: 000000000000000000000000010000000100000000000000000000000000000000000000000000000000000001000000
+    - name: init
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 70.203125
+        y: 109.796875
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: canClick
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: canClick
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetMouseCursor
+        - HutongGames.PlayMaker.Actions.MousePick2dEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 074b1504b7085104
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: 
+          value: {fileID: 0}
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - canClick
+        - 
+        - 
+        - 
+        byteData: 0001
+        arrayParamSizes: 00000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmInt
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 2100000011000000110000000100000014000000170000001700000017000000170000000c0000001100000001000000
+        paramName:
+        - cursorTexture
+        - hideCursor
+        - lockCursor
+        - everyFrame
+        - GameObject
+        - mouseOver
+        - mouseDown
+        - mouseUp
+        - mouseOff
+        - layerMask
+        - invertMask
+        - everyFrame
+        paramDataPos: 000000000000000001000000000000000000000000000000010000000200000003000000000000000200000001000000
+        paramByteDataSize: 000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000
     events:
     - name: getWBButton
       isSystemEvent: 0
@@ -27614,6 +27738,12 @@ MonoBehaviour:
     - name: turnOffUIboard
       isSystemEvent: 0
       isGlobal: 1
+    - name: canClick
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: cantClick
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables: []
