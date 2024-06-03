@@ -83,3 +83,9 @@ MonoBehaviour:
   - Start
   - runAway
   - RunAway
+  - UIon
+  - UIoff
+  - INVaddChoco
+  - INVaddLighter
+  - INVaddNuzky
+  - INVaddKlubko
