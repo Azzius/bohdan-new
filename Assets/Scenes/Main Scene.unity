@@ -1576,7 +1576,7 @@ MonoBehaviour:
         - realTime
         paramDataPos: 00000000000000000000000001000000000000000400000001000000000000000000000001000000020000000000000005000000
         paramByteDataSize: 00000000000000000000000000000000040000000100000000000000000000000000000000000000000000000000000001000000
-    - name: blood
+    - name: animation
       description: 
       colorIndex: 0
       position:
@@ -1713,7 +1713,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 6
+          value: 3.2
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -1828,7 +1828,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: blood
+        toState: animation
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -1956,7 +1956,7 @@ MonoBehaviour:
           name: isFalse
           isSystemEvent: 0
           isGlobal: 0
-        toState: blood
+        toState: animation
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -27286,7 +27286,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 10.6
+          value: 5.18
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -31768,7 +31768,7 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000000000000000000000000000000000000010000000000000001000000040000000500000000000000010000000000000006000000
         paramByteDataSize: 0000000004000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000001000000
-    - name: FIRE
+    - name: animation
       description: 
       colorIndex: 0
       position:
@@ -31855,7 +31855,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 10.2
+          value: 5.2
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -32639,7 +32639,7 @@ MonoBehaviour:
           name: isFalse
           isSystemEvent: 0
           isGlobal: 0
-        toState: FIRE
+        toState: animation
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -32714,7 +32714,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: FIRE
+        toState: animation
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
