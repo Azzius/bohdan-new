@@ -6023,7 +6023,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 3
+          value: 2
         - useVariable: 0
           name: 
           tooltip: 
@@ -6205,7 +6205,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 3
+          value: 2
         - useVariable: 0
           name: 
           tooltip: 
@@ -6533,7 +6533,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 2
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
