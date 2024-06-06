@@ -9958,7 +9958,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - endOfAnim
-        byteData: 0000010000
+        byteData: 0100010000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -19251,7 +19251,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 3.08
+          value: 3.07
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -53223,8 +53223,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 742.4219
-        y: 166.5
+        x: 739.7578
+        y: 170.41406
         width: 100
         height: 16
       isBreakpoint: 0
@@ -53603,11 +53603,11 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: isBabiFirst
+          name: isPhoneFirst
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -53704,11 +53704,11 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: isSousedFirst
+          name: isPhoneFirst
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -53805,11 +53805,11 @@ MonoBehaviour:
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 1
-          name: isUtulekFirst
+          name: isPhoneFirst
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -54098,29 +54098,11 @@ MonoBehaviour:
       intVariables: []
       boolVariables:
       - useVariable: 1
-        name: isBabiFirst
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 1
-      - useVariable: 1
-        name: isSousedFirst
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 1
-      - useVariable: 1
-        name: isUtulekFirst
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 1
-      - useVariable: 1
         name: isPhoneFirst
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        value: 0
+        value: 1
       stringVariables: []
       vector2Variables: []
       vector3Variables: []
@@ -54135,7 +54117,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
