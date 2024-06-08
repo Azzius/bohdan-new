@@ -4509,7 +4509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 99.95, y: -0.5}
+  m_AnchoredPosition: {x: 99.95, y: -2.58}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &176045615
@@ -36823,18 +36823,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 103
-        - useVariable: 1
+        - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
-        - useVariable: 1
+          value: -2.58
+        - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 4.54
         - useVariable: 1
           name: 
           tooltip: 
@@ -36855,7 +36855,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 010000000100
+        byteData: 000000000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
