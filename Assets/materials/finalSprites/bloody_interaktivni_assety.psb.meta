@@ -314,7 +314,7 @@ ScriptedImporter:
       x: 4
       y: 1198
       width: 256
-      height: 460
+      height: 464
     spriteID: 649783e708c5b3945a35a788b7a21ce0
     spriteBone: []
     spriteOutline: []
@@ -333,8 +333,8 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 313
-      y: 1301
-      width: 206
+      y: 1300
+      width: 207
       height: 494
     spriteID: 0f1d3815592c8e84b98ed395969ced84
     spriteBone: []
