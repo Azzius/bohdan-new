@@ -53,10 +53,60 @@ MonoBehaviour:
       stringValues: []
       vector4Values: []
       objectReferences: []
+    - useVariable: 1
+      name: Phase1Monology
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 4
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues:
+      - "Ko\u010Dky se boj\xED vody...\u017Ee?"
+      - "No tak ty jde\u0161 ven. Okam\u017Eit\u011B!"
+      - "Jak ses sem dostala?? Tady b\xFDt nem\u016F\u017Ee\u0161..."
+      - A mazej ven!
+      vector4Values: []
+      objectReferences: []
+    - useVariable: 1
+      name: Phase2Monology
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      type: 4
+      objectTypeName: UnityEngine.Object
+      floatValues: []
+      intValues: 
+      boolValues: 
+      stringValues:
+      - "J\xE1 na n\u011Bj snad brzo n\u011Bco shod\xEDm. \u0160mik \u0161mik a bude
+        pokoj..."
+      - 0
+      - "T\u0159eba m\xE1 hlad?"
+      - "Kousek sladk\xE9ho mu p\u0159ece neubl\xED\u017E\xED..."
+      - "Celej ho\u0159\xEDm, jestli se j\xED co nejd\u0159\xEDv nezbav\xEDm, tak
+        asi vybouchnu!!!"
+      - "Pane Bo\u017Ee na nebes\xEDch, cos mi to poslal za Satana!"
+      - "Entent\xFDky, dva \u0161pal\xEDky, kocour let\xED z elektriky..."
+      - "Hrom aby do toho! Nebo sp\xED\u0161 blesk..."
+      - "Kdybych tak m\u011Bl alespo\u0148 n\u011Bco \u010D\xEDm bych ho zabavil...
+        ne\u017E vymysl\xEDm jak se ho zbavit."
+      - "P\u0159ece bych ji nevyhodil z okna... Je to jen kot\u011B."
+      - "Je\u0161t\u011B chv\xEDli m\u011B bude sr\xE1t a let\xED z okna..."
+      - "Mohl bych si zahr\xE1t n\u011Bco hezk\xFDho na rozpt\xFDlen\xED..."
+      - "Ta ko\u010Dka u\u017E mi dost hraje na nervy... Co kdybych si j\xE1 zahr\xE1l
+        n\u011Bco na ni..."
+      - "Ty kazety co tu m\xE1 babi nejsou nic pro m\u011B... cht\u011Blo by to n\u011Bco
+        nov\xE9ho."
+      - "U\u017E jsem \xFApln\u011B vys\xE1t\xFD, nem\xE1m na tohle energii..."
+      vector4Values: []
+      objectReferences: []
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - setKinematic
   - setDynamic
@@ -91,3 +141,5 @@ MonoBehaviour:
   - INVaddKlubko
   - BohdanGoneKlubko
   - INVset0
+  - Wait1Napoveda
+  - Wait2Napoveda
