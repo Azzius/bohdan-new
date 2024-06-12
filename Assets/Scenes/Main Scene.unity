@@ -77711,7 +77711,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 5
+          value: 10
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -78105,6 +78105,9 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         - HutongGames.PlayMaker.Actions.EnableFSM
         - HutongGames.PlayMaker.Actions.SetPosition2d
         - HutongGames.PlayMaker.Actions.SetProperty
@@ -78121,13 +78124,40 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101000101
-        actionIsOpen: 0101010101010101
-        actionStartIndex: 00000000050000000900000010000000120000001a0000002100000026000000
-        actionHashCodes: b2cf100087aa97000cf26a005ac85204f6e5be030cf26a00b2cf100048c01101
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101010101000101
+        actionIsOpen: 0101010101010101010101
+        actionStartIndex: 00000000050000000a0000000f00000014000000180000001f00000021000000290000003000000035000000
+        actionHashCodes: b2cf1000b2cf1000b2cf1000b2cf100087aa97000cf26a005ac85204f6e5be030cf26a00b2cf100048c01101
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1447458135}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 1622159781}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 2080250342}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -78381,6 +78411,42 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 0
         - useVariable: 0
           name: 
@@ -78437,13 +78503,28 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - text2
-        byteData: 000000000000000000010000000000010000000000000000
+        byteData: 000000000000000000000000000000010000000000010000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000110000001100000001000000010000001400000012000000110000001100000014000000250000000f0000000f0000000700000001000000010000002400000001000000140000001c0000000f0000000f0000000f00000007000000010000000100000014000000250000000f0000000f00000007000000010000000100000014000000110000001100000001000000010000000f0000001700000001000000
+        paramDataType: 14000000110000001100000001000000010000001400000011000000110000000100000001000000140000001100000011000000010000000100000014000000110000001100000001000000010000001400000012000000110000001100000014000000250000000f0000000f0000000700000001000000010000002400000001000000140000001c0000000f0000000f0000000f00000007000000010000000100000014000000250000000f0000000f00000007000000010000000100000014000000110000001100000001000000010000000f0000001700000001000000
         paramName:
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
         - gameObject
         - activate
         - recursive
@@ -78485,8 +78566,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 0000000000000000010000000000000001000000010000000000000002000000030000000200000000000000000000000100000002000000060000000700000000000000080000000300000000000000020000000300000004000000090000000d0000000e000000040000000100000005000000060000000f00000013000000140000000500000004000000050000001500000016000000070000000000000017000000
-        paramByteDataSize: 0000000000000000000000000100000001000000000000000000000000000000000000000000000000000000000000000000000004000000010000000100000000000000010000000000000000000000000000000000000000000000040000000100000001000000000000000000000000000000000000000400000001000000010000000000000000000000000000000100000001000000000000000000000001000000
+        paramDataPos: 00000000000000000100000000000000010000000100000002000000030000000200000003000000020000000400000005000000040000000500000003000000060000000700000006000000070000000400000000000000080000000900000005000000000000000000000001000000080000000c0000000d000000000000000e00000006000000000000000200000003000000040000000f00000013000000140000000700000001000000050000000600000015000000190000001a000000080000000a0000000b0000001b0000001c00000007000000000000001d000000
+        paramByteDataSize: 0000000000000000000000000100000001000000000000000000000000000000010000000100000000000000000000000000000001000000010000000000000000000000000000000100000001000000000000000000000000000000000000000000000000000000000000000000000004000000010000000100000000000000010000000000000000000000000000000000000000000000040000000100000001000000000000000000000000000000000000000400000001000000010000000000000000000000000000000100000001000000000000000000000001000000
     - name: text2
       description: 
       colorIndex: 0
